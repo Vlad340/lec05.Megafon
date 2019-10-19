@@ -18,10 +18,12 @@ public class TariffOther extends TariffAbstract {
 
     @Override
     public void printTariff() {
-        String result= "id=:"+ getId() +"\nИмя тарифа:" +getTariffName();
+        String result= "id=:"+ getId() +"\nИмя тарифа:" +getTariffName()+"\n"+getShortDescription();
         result +="\nОсновной пакет:"+getBasicServices()+"\nЦена:"+getPrice()+" "+getBillingPeriod();
         if (isTariffButton()) {
-            result +="\nкнопка <ВЫБРАТЬ>"+"\nссылка:"+getUrlDetail()+"\n";
+            result += "\nкнопка <ВЫБРАТЬ>" + "\nссылка:" + getUrlDetail() + "\n";;
+        } else {
+            result += "\nкнопка <" +getUrlDetail() + ">\n";
         }
         System.out.println(result);
         return;
