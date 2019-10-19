@@ -34,11 +34,10 @@ public class TariffMain extends TariffAbstract {
         }
         result +="\nОсновной пакет:"+getBasicServices()+"\nДополнительный пакет:"+getAdditionalService()+"\nЦена:"+getPrice()+" "+getBillingPeriod();
         if (isTariffButton()) {
-            result += "\nкнопка <ВЫБРАТЬ>" + "\nссылка:" + getUrlDetail() + "\n";;
+            result += "\nкнопка <ВЫБРАТЬ>" + "\nссылка:" + getUrlDetail() + "\n";
         } else {
             result += "\nкнопка <" +getUrlDetail() + ">\n";
         }
         System.out.println(result);
-        return;
     }
 }

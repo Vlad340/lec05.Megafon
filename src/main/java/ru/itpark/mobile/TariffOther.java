@@ -21,11 +21,10 @@ public class TariffOther extends TariffAbstract {
         String result= "id=:"+ getId() +"\nИмя тарифа:" +getTariffName()+"\n"+getShortDescription();
         result +="\nОсновной пакет:"+getBasicServices()+"\nЦена:"+getPrice()+" "+getBillingPeriod();
         if (isTariffButton()) {
-            result += "\nкнопка <ВЫБРАТЬ>" + "\nссылка:" + getUrlDetail() + "\n";;
+            result += "\nкнопка <ВЫБРАТЬ>" + "\nссылка:" + getUrlDetail() + "\n";
         } else {
             result += "\nкнопка <" +getUrlDetail() + ">\n";
         }
         System.out.println(result);
-        return;
     }
 }

@@ -86,6 +86,5 @@ public abstract class TariffAbstract {
     }
 
     public void printTariff() {
-        return;
     }
 }
