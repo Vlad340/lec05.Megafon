@@ -9,7 +9,9 @@ public class Main {
             if (result == null) {
                 return;
             }
-            result.printTariff();
+            if (result.getTariffGroup() == "Включайся!") {
+                result.printTariff();
+            }
         }
 
     }
