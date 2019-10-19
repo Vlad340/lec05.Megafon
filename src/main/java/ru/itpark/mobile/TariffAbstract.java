@@ -4,17 +4,19 @@ public abstract class TariffAbstract {
     private long id;
     private String tariffGroup;
     private String tariffName;
-    private String basicServices [];
-    private float price;
+    private String basicServices;
+    private String price;
+    private String billingPeriod;
     private boolean tariffButton;
     private String urlDetail;
 
-    public TariffAbstract(long id, String tariffGroup, String tariffName, String basicServices [], float price, boolean tariffButton, String urlDetail) {
+    public TariffAbstract(long id, String tariffGroup, String tariffName, String basicServices, String price, String billingPeriod, boolean tariffButton, String urlDetail) {
         this.id=id;
         this.tariffGroup=tariffGroup;
-        this.basicServices[]=basicServices[];
+        this.basicServices =basicServices;
         this.tariffName=tariffName;
         this.price = price;
+        this.billingPeriod=billingPeriod;
         this.tariffButton = tariffButton;
         this.urlDetail = urlDetail;
     }
@@ -51,12 +53,20 @@ public abstract class TariffAbstract {
         this.basicServices = basicServices;
     }
 
-    public float getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getBillingPeriod() {
+        return billingPeriod;
+    }
+
+    public void setBillingPeriod(String billingPeriod) {
+        this.billingPeriod = billingPeriod;
     }
 
     public boolean isTariffButton() {
@@ -73,5 +83,9 @@ public abstract class TariffAbstract {
 
     public void setUrlDetail(String urlDetail) {
         this.urlDetail = urlDetail;
+    }
+
+    public void printTariff() {
+        return;
     }
 }
