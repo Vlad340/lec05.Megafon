@@ -30,7 +30,7 @@ public class TariffMain extends TariffAbstract {
     public void printTariff() {
         String result= "id=:"+ getId() +"\nИмя тарифа:" +getTariffName();
         if (isFlagHit()) {
-            result +=" Хит";
+            result +="\nХит";
         }
         result +="\nОсновной пакет:"+getBasicServices()+"\nДополнительный пакет:"+getAdditionalService()+"\nЦена:"+getPrice()+" "+getBillingPeriod();
         if (isTariffButton()) {

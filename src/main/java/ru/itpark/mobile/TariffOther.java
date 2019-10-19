@@ -16,17 +16,14 @@ public class TariffOther extends TariffAbstract {
         this.shortDescription = shortDescription;
     }
 
-  /*  @Override
+    @Override
     public void printTariff() {
         String result= "id=:"+ getId() +"\nИмя тарифа:" +getTariffName();
-        if (isFlagHit()) {
-            result +=" Хит";
-        }
-        result +="\nОсновной пакет:"+getBasicServices()+"\nДополнительный пакет:"+getAdditionalService()+"\nЦена:"+getPrice()+" "+getBillingPeriod();
+        result +="\nОсновной пакет:"+getBasicServices()+"\nЦена:"+getPrice()+" "+getBillingPeriod();
         if (isTariffButton()) {
             result +="\nкнопка <ВЫБРАТЬ>"+"\nссылка:"+getUrlDetail()+"\n";
         }
         System.out.println(result);
         return;
-    }*/
+    }
 }
