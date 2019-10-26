@@ -28,7 +28,7 @@ public class TariffMain extends TariffAbstract {
 
     @Override
     public void printTariff() {
-        String result= "id=:"+ getId() +"\nИмя тарифа:" +getTariffName();
+        String result= "id=:"+ getId() +"\nИмя тарифа:" + getName();
         if (isFlagHit()) {
             result +="\nХит";
         }

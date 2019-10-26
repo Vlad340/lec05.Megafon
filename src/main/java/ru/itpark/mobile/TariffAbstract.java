@@ -2,19 +2,19 @@ package ru.itpark.mobile;
 
 public abstract class TariffAbstract {
     private long id;
-    private String tariffGroup;
-    private String tariffName;
+    private String group;
+    private String name;
     private String basicServices;
     private String price;
     private String billingPeriod;
     private boolean tariffButton;
     private String urlDetail;
 
-    public TariffAbstract(long id, String tariffGroup, String tariffName, String basicServices, String price, String billingPeriod, boolean tariffButton, String urlDetail) {
+    public TariffAbstract(long id, String group, String name, String basicServices, String price, String billingPeriod, boolean tariffButton, String urlDetail) {
         this.id=id;
-        this.tariffGroup=tariffGroup;
+        this.group = group;
         this.basicServices =basicServices;
-        this.tariffName=tariffName;
+        this.name = name;
         this.price = price;
         this.billingPeriod=billingPeriod;
         this.tariffButton = tariffButton;
@@ -29,20 +29,20 @@ public abstract class TariffAbstract {
         this.id = id;
     }
 
-    public String getTariffGroup() {
-        return tariffGroup;
+    public String getGroup() {
+        return group;
     }
 
-    public void setTariffGroup(String tariffGroup) {
-        this.tariffGroup = tariffGroup;
+    public void setGroup(String group) {
+        this.group = group;
     }
 
-    public String getTariffName() {
-        return tariffName;
+    public String getName() {
+        return name;
     }
 
-    public void setTariffName(String tariffName) {
-        this.tariffName = tariffName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getBasicServices() {

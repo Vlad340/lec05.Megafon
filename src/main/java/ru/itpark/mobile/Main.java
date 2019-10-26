@@ -17,7 +17,7 @@ public class Main {
             if (result == null) {
                 break;
             }
-            if (result.getTariffGroup() == "Включайся!") {
+            if (result.getGroup() == "Включайся!") {
                 result.printTariff();
             }
         }
@@ -27,7 +27,7 @@ public class Main {
             if (result == null) {
                 break;
             }
-            if (result.getTariffGroup() == "Модемы") {
+            if (result.getGroup() == "Модемы") {
                 result.printTariff();
             }
 
@@ -36,7 +36,7 @@ public class Main {
             if (result == null) {
                 break;
             }
-            if (result.getTariffGroup() == "Прочие") {
+            if (result.getGroup() == "Прочие") {
                 result.printTariff();
             }
         }
