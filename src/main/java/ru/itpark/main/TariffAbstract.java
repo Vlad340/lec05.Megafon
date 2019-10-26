@@ -1,4 +1,4 @@
-package ru.itpark.mobile;
+package ru.itpark.main;
 
 public abstract class TariffAbstract {
     private long id;

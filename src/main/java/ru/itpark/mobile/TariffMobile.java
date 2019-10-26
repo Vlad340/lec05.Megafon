@@ -1,11 +1,13 @@
 package ru.itpark.mobile;
 
-public class TariffMain extends TariffAbstract {
+import ru.itpark.main.TariffAbstract;
+
+public class TariffMobile extends TariffAbstract {
     private String additionalService;
     private boolean flagHit;
 
-    public TariffMain(long id, String tariffGroup, String tariffName, String basicServices, String price, String billingPeriod, boolean tariffButton, String urlDetail, String additionalService, boolean flagHit) {
-        super(id, tariffGroup, tariffName, basicServices, price, billingPeriod, tariffButton, urlDetail);
+    public TariffMobile(long id, String group, String name, String basicServices, String price, String billingPeriod, boolean tariffButton, String urlDetail, String additionalService, boolean flagHit) {
+        super(id, group, name, basicServices, price, billingPeriod, tariffButton, urlDetail);
         this.additionalService = additionalService;
         this.flagHit=flagHit;
     }
